@@ -9,30 +9,39 @@
 
     <script src="time.js" defer></script>
     <script src="date.js" defer></script>
+    <script src="location.js" defer></script>
 
 </head>
-<body>
-
-    <main>
-  
-        <!-- Time -->
-        <time class="time">
-                <data class="hours">HH</data> :
-                <data class="minutes">MM</data> :
-                <data class="seconds">SS</data>
-                <data class="amOrPM">AM/PM</data>
-            </time>
-      
-          
-        <!-- Date -->
-        <time class="date">
-          <data class="month">Month</data>
-          <data class="dayOfMonth">00</data>,
-          <data class="year">0000</data> -
-          <data class="dayOfWeek">SMTWTFS</data>
-        </time>
-      
-      </main>
-    
-</body>
+  <body class="bg-blue-100 flex h-screen w-screen items-center justify-center">
+    <div class="px-5">
+      <h1 class="bg-gray-600 text-4xl text-center font-bold text-white rounded-2xl px-10 py-2">Date, Time, and Location</h1>
+      <h2 class="text-center font-bold font-sans text-lg py-1 text-gray-600">By: William Reese</h2>
+    </div>
+    <!-- Time -->
+    <div class="grid justify-center p-2">
+      <div class="block max-w-sm p-6 border rounded-lg shadow bg-gray-500 border-gray-700 m-2">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Current Time</h5>
+        <time class="font-normal text-gray-200">
+          <data class="hours">HH</data> :
+          <data class="minutes">MM</data> :
+          <data class="seconds">SS</data>
+          <data class="amOrPM">AM/PM</data>
+        </data>
+      </div>
+      <div class="block max-w-sm p-6 border rounded-lg shadow bg-gray-700 border-gray-700 m-2">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Current Date</h5>
+        <time class="font-normal text-gray-300">
+          <data class=" month">Month</data>
+            <data class="dayOfMonth">00</data>,
+            <data class="year">0000</data> -
+            <data class="dayOfWeek">SMTWTFS</data>
+        </data>
+      </div>
+      <div class="block max-w-sm p-6 border rounded-lg shadow bg-gray-800 border-gray-700 m-2">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Current Location</h5>
+        <time class="font-normal text-gray-400">
+          <data class="location">Unknown Location</data>
+        </data>
+      </div>
+  </body>
 </html>

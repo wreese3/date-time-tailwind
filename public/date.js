@@ -1,3 +1,4 @@
+
 /************
 Static Data
 ************/
@@ -30,6 +31,7 @@ const allTheMonths = [
   ************/
   // Get and store current date and time with `new Date()` object
   const dateNow = new Date();
+  
   
   // Check-Check: See all `Date()` methods and properties
   console.log( dateNow );
